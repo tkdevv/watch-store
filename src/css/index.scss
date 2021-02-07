@@ -1,0 +1,34 @@
+@import "homePage";
+@import "detailPage";
+@import "header";
+@import "watches";
+@import "cart";
+@import "variables";
+
+$headerHeight: 50px;
+
+body {
+  margin: 0;
+  padding: 0;
+  // background-color: rgb(238, 151, 151);
+  background-color: #000000;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: $ffP;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .app-wrapper {
+    position: relative;
+    transition: all 300ms ease;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,73 @@
+@import "variables";
+
+.home-watches-container {
+  display: grid;
+  align-items: center;
+  // flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-row-gap: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 200px));
+  width: 100%;
+  margin-top: 40px;
+  // background-color: blue;
+
+  .home-watch {
+    height: 300px;
+    display: flex;
+    // background-color: rgba(48, 48, 48, 0.623);
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 20px;
+
+    .home-watch-name {
+      font-family: $ffP;
+    }
+
+    img {
+      width: 80%;
+      margin: 0 auto;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: -20px;
+    }
+
+    .home-watch-link {
+      margin-top: -20px;
+      font-weight: normal;
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: $brandRed;
+    }
+  }
+}
+
+.small-watch {
+  width: 150px;
+  min-width: 90%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    cursor: pointer;
+    width: 120px;
+    height: 125px;
+    object-fit: contain;
+    @media (max-width: 900px) {
+    }
+  }
+  .detail-small-watch-name {
+    cursor: pointer;
+    justify-self: stretch;
+    font-family: "Playfair Display", serif;
+    font-family: $ffP;
+    margin-left: 10px;
+    text-align: left;
+  }
+}

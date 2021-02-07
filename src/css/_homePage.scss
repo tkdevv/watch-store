@@ -1,0 +1,24 @@
+@import "variables";
+
+.home-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+  // background-color: palegoldenrod;
+
+  .home-heading {
+    font-family: $ffH1;
+    font-size: 70px;
+    margin: 0;
+    @media (max-width: 400px) {
+      font-size: 60px;
+    }
+  }
+
+  //  WATCH STYLES IN WATCHES.SCSS
+}

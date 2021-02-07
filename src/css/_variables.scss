@@ -1,0 +1,22 @@
+// Colours
+$bgc: #000;
+$textc: #fff;
+$brandRed: #f80707;
+$brandGreen: #0aff7c;
+
+// Fonts
+$ffH1: "Cedarville Cursive", serif;
+$ffH1: "Romanesco", serif;
+$ffH1: "Italianno", serif;
+$ffH3: "Be Vietnam", sans-serif;
+$ffP: "Montserrat", sans-serif;
+
+@mixin btnStyle {
+  cursor: pointer;
+  background-color: $brandGreen;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 1000px;
+}
